@@ -4,11 +4,10 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="{% static 'education/css/style.css' %}">
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="{% static 'education/css/student_dashboard.css' %}" />
-  <link rel="stylesheet" type="text/js" href="script.js" />
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
     integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
@@ -18,7 +17,7 @@
 <body>
   <div class="sidebar">
     <div class="logo-details">
-      <img class="logo-img" src="school icon-modified.png" alt="Girl in a jacket" width="40" height="40">
+      <img class="logo-img" src="{% static 'education/img/dashboard/school icon-modified.png' %}" alt="Girl in a jacket" width="40" height="40">
 
       <span class="logo_name">GetToClass</span>
     </div>
@@ -60,7 +59,7 @@
         </a>
       </li>
       <li class="log_out">
-        <a href="#">
+        <a href="{% url 'logout' %}">
           <i class='bx bx-log-out'></i>
           <span class="links_name">Log out</span>
         </a>
@@ -79,7 +78,7 @@
         <i class='bx bx-search'></i>
       </div>
       <div class="profile-details">
-        <img src="profile_student-modified.png" alt="Miran" >
+        <img src="{% static 'education/img/dashboard/profile_student-modified.png' %}" alt="Miran" >
         <span class="admin_name">Miran M.</span>
         <i class='bx bx-chevron-down'></i>
       </div>
@@ -90,7 +89,7 @@
       <div class="outerDiv">
         <div class="leftDiv">
 
-          <img src="profile_student.jpg" alt="Miran" style="width:100%">
+          <img src="{% static 'education/img/dashboard/profile_student.jpg' %}" alt="Miran" style="width:100%">
         </div>
         <div class="rightDiv">
           <br>
@@ -288,51 +287,12 @@
 
     </div>
 
-    <!-- <div class="img-chatbot">
-      <a href="#"> <img  src="chat_bot-removebg-preview.png" width="100" height="100"/> </a> 
+    <div class="img-chatbot">
+      <a href="{% url 'chatbot' %}"> <img  src="{% static 'education/img/dashboard/chat_bot-removebg-preview.png' %}" width="100" height="100"/> </a>
     
     
-    </div> -->
-
-
-    <div id="center-text">
-      <h2></h2>
-      <p></p>
     </div>
-    <div id="body">
 
-      <div id="chat-circle" class="btn btn-raised">
-        <div id="chat-overlay"></div>
-        <i class="fas fa-comment-dots fa-2x"></i>
-      </div>
-
-      <div class="chat-box">
-        <div class="chat-box-header">
-          ChatBot
-          <span class="chat-box-toggle">
-
-
-            <i class="fas fa-times fa-2x"></i>
-
-          </span>
-        </div>
-        <div class="chat-box-body">
-          <div class="chat-box-overlay">
-          </div>
-          <div class="chat-logs">
-
-          </div>
-          <!--chat-log -->
-        </div>
-        <div class="chat-input">
-          <form>
-            <input type="text" id="chat-input" placeholder="Send a message..." />
-            <button type="submit" class="chat-submit" id="chat-submit">
-              <i class="fas fa-paper-plane fa-2x"></i>
-            </button>
-          </form>
-        </div>
-      </div>
 
 
 
