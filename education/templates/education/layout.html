@@ -1,4 +1,5 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,7 +29,7 @@
 
   <!-- Template Main CSS File -->
   <link href="{% static 'education/css/style.css' %}" rel="stylesheet">
-
+    <title>{% block title %}GetToClass{% endblock %}</title>
 </head>
 
 <body>
@@ -37,7 +38,7 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="index.html">AI in Education</a></h1>
+      <h1 class="logo me-auto"><a href="{% url 'index' %}">AI in Education</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -65,8 +66,12 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li>
+            {% if not user.is_authenticated %}
           <li><a class="nav-link scrollto" href="{% url 'login' %}">Login</a></li>
           <li><a class="getstarted scrollto" href="{% url 'signup' %}">Sign Up</a></li>
+        {% else %}
+            <li><a class="getstarted scrollto" href="{% url 'logout' %}">Log Out</a></li>
+            {% endif %}
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
