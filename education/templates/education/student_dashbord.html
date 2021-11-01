@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="student_dashboard.css" />
+  <link rel="stylesheet" type="text/js" href="script.js" />
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+
+</head>
+
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <img class="logo-img" src="school icon-modified.png" alt="Girl in a jacket" width="40" height="40">
+
+      <span class="logo_name">GetToClass</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="#" class="active">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Profile</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-box'></i>
+          <span class="links_name">Sessions</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-list-ul'></i>
+          <span class="links_name">Quiz</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-pie-chart-alt-2'></i>
+          <span class="links_name">Score</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-heart' ></i>
+          <span class="links_name">E-books</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-cog'></i>
+          <span class="links_name">Setting</span>
+        </a>
+      </li>
+      <li class="log_out">
+        <a href="#">
+          <i class='bx bx-log-out'></i>
+          <span class="links_name">Log out</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <section id="home-section" class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard">Dashboard</span>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Student's Dashbord Search...">
+        <i class='bx bx-search'></i>
+      </div>
+      <div class="profile-details">
+        <img src="profile_student-modified.png" alt="Miran" >
+        <span class="admin_name">Miran M.</span>
+        <i class='bx bx-chevron-down'></i>
+      </div>
+    </nav>
+
+    <div style="text-align: center;">
+      <!-- <h1>Profile</h1> -->
+      <div class="outerDiv">
+        <div class="leftDiv">
+
+          <img src="profile_student.jpg" alt="Miran" style="width:100%">
+        </div>
+        <div class="rightDiv">
+          <br>
+          <br>
+       
+          <h1>Miran M.</h1>
+          <p class="title">School of Abvey</p>
+          <p>College Studnet</p>
+          <p>miran.m@gmail.com</p>
+          <p>Marketing and Managment Student</p>
+          <p>Freshman</p>
+
+          <div style="margin: 24px 0;">
+            <a href="#"><i class="fa fa-dribbble"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+          </div>
+          <p><button class="editButton">Edit</button></p>
+        </div>
+        <div style="clear: both;"></div>
+      </div>
+
+
+
+    </div>
+    <hr>
+    <div class="home-content">
+      <div class="overview-boxes-1">
+        <div class="box">
+          <div>
+            <div class="box-topic">Live Session</div><br>
+            <div class="number">5</div>
+            <!-- Count down timer can be injected here using python -->
+            <div class="indicator">
+              <i class='bx bx-up-arrow-alt'></i>
+              <a href="#" class="text-links"><span>Join now</span></a>
+              <!-- link with the python code -->
+              <!-- User clicks join now -> a face scanning screen will display -->
+            </div>
+          </div>
+
+        </div>
+        <div class="box">
+          <div>
+            <div class="box-topic">Take quiz </div><br>
+            <div class="number">5</div>
+            <!-- Count down timer can be injected here using python -->
+            <div class="indicator">
+              <i class='bx bx-up-arrow-alt'></i>
+              <span> <a href="#" class="text-links">Start</a></span>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="sales-boxes">
+        <div class="recent-sales box">
+          <div class="title">Class History</div>
+          <div class="sales-details">
+            <ul class="details">
+              <li class="topic">Date</li>
+              <li><a href="#">29 Oct 2021</a></li>
+              <li><a href="#">27 Sep 2021</a></li>
+              <li><a href="#">21 Sep 2021</a></li>
+              <li><a href="#">17 Sep 2021</a></li>
+              <li><a href="#">07 Aug 2021</a></li>
+              <li><a href="#">03 July 2021</a></li>
+              <li><a href="#">01 July 2021</a></li>
+            </ul>
+            <ul class="details">
+              <li class="topic">Time</li>
+              <li><a href="#">3 AM - 4 AM</a></li>
+              <li><a href="#">8 AM - 9 AM</a></li>
+              <li><a href="#">2 AM - 3 AM</a></li>
+              <li><a href="#">9 AM - 10 AM</a></li>
+              <li><a href="#">5 AM - 6 AM</a></li>
+              <li><a href="#">7 AM -8 AM</a></li>
+              <li><a href="#">6 AM - 7 AM</a></li>
+
+            </ul>
+
+
+            <ul class="details">
+              <li class="topic">Course Title</li>
+              <li><a href="#">	Services Marketing</a></li>
+              <li><a href="#">	Public Relations	</a></li>
+              <li><a href="#">Global Marketing</a></li>
+              <li><a href="#">Social Media Marketing</a></li>
+              <li><a href="#">Marketing Research </a></li>
+              <li><a href="#">	Marketing Strategy</a></li>
+              <li><a href="#">Marketing Analytics</a></li>
+
+            </ul>
+
+          </div>
+          <div class="button">
+            <a href="#">See All</a>
+          </div>
+        </div>
+        <div class="top-sales box">
+          <div class="title">Quiz History</div>
+          <ul class="top-sales-details">
+            <li>
+              <!-- <a href="#"> -->
+                <span class="product"><b>Date taken</b></span>
+              <!-- </a> -->
+              <span class="price"><b>score</b></span>
+
+            </li>
+            <li>
+              <a href="#">
+                <span class="product">02 Oct 2021</span>
+              </a>
+              <span class="price">10</span>
+            </li>
+            <li>
+              <a href="#">
+                <span class="product">26 Sep 2021 </span>
+              </a>
+              <span class="price">20</span>
+            </li>
+            <li>
+              <a href="#">
+                <span class="product">22 Sep 2021</span>
+              </a>
+              <span class="price">8</span>
+            </li>
+            <li>
+              <a href="#">
+                <span class="product">12 Aug 2021</span>
+              </a>
+              <span class="price">5</span>
+            </li>
+            <li>
+              <a href="#">
+                <span class="product">08 July 2021</span>
+              </a>
+              <span class="price">9</span>
+            </li>
+            <li>
+              <a href="#">
+                <span class="product">05 July 2021</span>
+              </a>
+              <span class="price">15</span>
+              </li>
+            
+          </ul>
+          <div class="button">
+            <a href="#">See All</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="home-content last-section">
+      <div class="title-q">Quiz Performance</div>
+
+      <div class="overview-boxes-1">
+        <div class="box">
+          <figure class="css-chart" style="--widget-size: 200px;">
+            <ul class="line-chart">
+              <li style="--x: 40px; --y: 83.3333px;">
+                <div class="data-point" data-value="25"></div>
+                <div class="line-segment" style="--hypotenuse: 123.33333333333333; --angle:-71.07535558394876;"></div>
+              </li>
+              <li style="--x: 80px; --y: 200px;">
+                <div class="data-point" data-value="60"></div>
+                <div class="line-segment" style="--hypotenuse: 64.03124237432849; --angle:51.34019174590991;"></div>
+              </li>
+              <li style="--x: 120px; --y: 150px;">
+                <div class="data-point" data-value="45"></div>
+                <div class="line-segment" style="--hypotenuse: 43.333333333333336; --angle:-22.61986494804045;"></div>
+              </li>
+              <li style="--x: 160px; --y: 166.667px;">
+                <div class="data-point" data-value="50"></div>
+                <div class="line-segment" style="--hypotenuse: 52.068331172711055; --angle:39.805571092265225;"></div>
+              </li>
+              <li style="--x: 200px; --y: 133.333px;">
+                <div class="data-point" data-value="40"></div>
+                <div class="line-segment" style="--hypotenuse: 0; --angle:0;"></div>
+              </li>
+            </ul>
+          </figure>
+        </div>
+        <div class="box">
+          <div class="piechart"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- <div class="img-chatbot">
+      <a href="#"> <img  src="chat_bot-removebg-preview.png" width="100" height="100"/> </a> 
+    
+    
+    </div> -->
+
+
+    <div id="center-text">
+      <h2></h2>
+      <p></p>
+    </div>
+    <div id="body">
+
+      <div id="chat-circle" class="btn btn-raised">
+        <div id="chat-overlay"></div>
+        <i class="fas fa-comment-dots fa-2x"></i>
+      </div>
+
+      <div class="chat-box">
+        <div class="chat-box-header">
+          ChatBot
+          <span class="chat-box-toggle">
+
+
+            <i class="fas fa-times fa-2x"></i>
+
+          </span>
+        </div>
+        <div class="chat-box-body">
+          <div class="chat-box-overlay">
+          </div>
+          <div class="chat-logs">
+
+          </div>
+          <!--chat-log -->
+        </div>
+        <div class="chat-input">
+          <form>
+            <input type="text" id="chat-input" placeholder="Send a message..." />
+            <button type="submit" class="chat-submit" id="chat-submit">
+              <i class="fas fa-paper-plane fa-2x"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+  </section>
+
+
+
+
+</body>
+
+</html>
