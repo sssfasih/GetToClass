@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Chatbot</title>
+	<link rel="icon" href="{% static 'education/img/dashboard/bot.png' %}" />
+	<link rel="stylesheet" href="{% static 'education/css/chatbot.css' %}" />
+</head>
+
+<body>
+	<div id="container" class="container">
+		<div id="chat" class="chat">
+			<div id="messages" class="messages"></div>
+			<input id="input" type="text" placeholder="Say something..." autocomplete="off" autofocus="true" />
+		</div>
+		<img src="https://cdn.pixabay.com/photo/2020/01/02/16/38/chatbot-4736275_960_720.png" height="400vh" alt="Chatbot clipart">
+	</div>
+</body>
+<script type="text/javascript" src="{% static 'education/js/chatbot.js' %}" ></script>
+<script type="text/javascript" src="{% static 'education/js/constants.js' %}" ></script>
+</html>

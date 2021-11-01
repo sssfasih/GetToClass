@@ -12,8 +12,14 @@ import json
 
 def index(request):
     if request.user.is_authenticated:
-        return render(request,'education/student_dashbord.html')
+        if request.user.is_teacher:
+            return render(request,'education/teacher_dsahboard.html')
+        else:
+            return render(request,'education/student_dashbord.html')
     return render(request,'education/home.html')
+
+def chatbot(request):
+    return render(request,'education/chatbot.html')
 
 def login_view(request):
     if request.method == "POST":
@@ -54,6 +60,8 @@ def signup(request):
             return render(request, "education/signup.html", {
                 "message": "Passwords must match."
             })
+
+
 
         # Attempt to create new user
         try:

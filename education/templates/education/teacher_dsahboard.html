@@ -1,19 +1,20 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="{% static 'education/css/style.css' %}">
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="teacher_dashbord.css" />
+  <link rel="stylesheet" type="text/css" href="{% static 'education/css/teacher_dashbord.css' %}" />
 
 </head>
 
 <body>
   <div class="sidebar">
     <div class="logo-details">
-      <img class="logo-img" src="school icon-modified.png" alt="Girl in a jacket" width="40" height="40">
+      <img class="logo-img" src="{% static 'education/img/dashboard/school icon-modified.png' %}" alt="Girl in a jacket" width="40" height="40">
 
       <span class="logo_name">GetToClass</span>
 
@@ -21,13 +22,13 @@
     <ul class="nav-links">
 
       <li>
-        <a href="dash.html" class="active">
+        <a href="#" class="active">
           <i class='bx bx-grid-alt'></i>
           <span class="links_name">Profile</span>
         </a>
       </li>
       <li>
-        <a href="#another-content">
+        <a href="#">
           <i class='bx bx-box'></i>
           <span class="links_name">Sessions</span>
         </a>
@@ -52,7 +53,7 @@
         </a>
       </li>
       <li class="log_out">
-        <a href="#">
+        <a href="{% url 'logout' %}">
           <i class='bx bx-log-out'></i>
           <span class="links_name">Log out</span>
         </a>
@@ -71,7 +72,7 @@
         <i class='bx bx-search'></i>
       </div>
       <div class="profile-details">
-        <img src="teacher-profile.jpg" alt="">
+        <img src="{% static 'education/img/dashboard/teacher-profile.jpg' %}" alt="">
         <span class="admin_name">Mr. Marshall J</span>
         <i class='bx bx-chevron-down'></i>
       </div>
