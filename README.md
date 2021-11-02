@@ -8,5 +8,7 @@
 -   Run `python manage.py runserver` to start the server.
 -   The Server is now set-up. You may go to the website address to see it live.
 
-### Kandi Solution Kit
-https://kandi.openweaver.com/collections/vision/facial-recognition-attendance-track1
+### Kandi Solution Kits
+Face Recognition: https://kandi.openweaver.com/collections/vision/facial-recognition-attendance-track1
+
+Edu Chat Bot: https://kandi.openweaver.com/collections/buildwithai2021/edubot
